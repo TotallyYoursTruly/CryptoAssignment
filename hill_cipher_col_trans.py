@@ -87,8 +87,9 @@ def columnar_transposition_decrypt(ciphertext, key_word):
 
 # Example Usage
 key_matrix = [[6, 24, 1], [13, 16, 10], [20, 17, 15]]
+#transposition_key = input("enter transpos key: ")
 transposition_key = "HILL"
-plaintext = "HELLOHILL"
+plaintext = input("enter plaintext: ")
 
 hill_ciphertext = encrypt_hill(plaintext, key_matrix)
 final_ciphertext = columnar_transposition_encrypt(hill_ciphertext, transposition_key)
@@ -96,6 +97,12 @@ final_ciphertext = columnar_transposition_encrypt(hill_ciphertext, transposition
 decrypted_transposed = columnar_transposition_decrypt(final_ciphertext, transposition_key)
 decrypted_text = decrypt_hill(decrypted_transposed, key_matrix)
 
+print(f"transpos key: {transposition_key}")
+print(f"Plaintext: {plaintext}")
+print(f"Hill Ciphertext: {hill_ciphertext}")
+print(f"Final Ciphertext (After Transposition): {final_ciphertext}")
+print(f"Decrypted Transposition: {decrypted_transposed}")
+print(f"Decrypted: {decrypted_text}")
 print(f"Plaintext: {plaintext}")
 print(f"Hill Ciphertext: {hill_ciphertext}")
 print(f"Final Ciphertext (After Transposition): {final_ciphertext}")
