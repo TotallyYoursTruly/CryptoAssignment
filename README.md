@@ -105,7 +105,7 @@ Decrypted: KEY 0123456789ABCDEF0123456789ABCDEFFEDCBA9876543210 IV B94117FFF27B7
 
 BOB will use the key and iv that he gets from RSA earlier to decrypt the 3des-encrypted ciphertext
 
-calling des3_test1.py
+calling des3_test1.py in terminal:
 
 syntax: des3_test1.py [decrypt] [key] [ciphertext] [--iv] [iv]
 
